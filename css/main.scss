@@ -3,7 +3,8 @@
 ---
 @charset "utf-8";
 
-$background-color:  #00CCF4;
+$primary-color:     #00C7FF;
+$secondary-color:   #0089B0;
 $font-family:       "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 
 $spacing-unit:      30px;
@@ -24,8 +25,20 @@ $on-laptop:         800px;
     padding: 0px;
 }
 
+a {
+    border-bottom: 1px solid #EDEDED;
+    color: $primary-color;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: $secondary-color;
+    border-color: #bbb;
+}
+
 body {
-    background-color: $background-color;
+    text-align: center;
 }
 
 .wrapper {
@@ -53,3 +66,26 @@ body {
     }
 }
 
+#top {
+    background-color: $primary-color;
+    height: 3px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#about {
+    margin-top: 125px;
+}
+
+#about a, #about p {
+    font-size: 22px;
+}
+
+#about p {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 20px 0px;
+}
