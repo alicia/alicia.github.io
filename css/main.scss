@@ -87,14 +87,25 @@ p, blockquote, ul, ol {
     }
 }
 
-#top {
-    background-color: $primary-color;
-    height: 3px;
+#navigation {
+    border-top: 3px solid $primary-color;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
+}
+
+#navigation-toggle {
+    margin-right: 25px;
+    margin-top: 22px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.logo {
+    height: 30px;
 }
 
 #about {
@@ -107,7 +118,6 @@ p, blockquote, ul, ol {
 }
 
 #about p {
-    font-size: 22px;
     font-weight: 300;
     margin: 20px 0px;
 }
@@ -124,9 +134,6 @@ p, blockquote, ul, ol {
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
-}
-.post-link {
-    font-size: 24px;
 }
 
 .post-content {
