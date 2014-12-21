@@ -5,7 +5,14 @@
 
 $primary-color:     #00C7FF;
 $secondary-color:   #0089B0;
-$font-family:       "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+$grey-color:        #828282;
+$light-grey:        #EDEDED;
+$dark-grey:         #BBBBBB;
+
+$base-font-family:  "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+$base-font-size:    16px;
+$small-font-size:   $base-font-size * 0.875;
+$base-line-height:  1.5;
 
 $spacing-unit:      30px;
 $content-width:     800px;
@@ -19,14 +26,13 @@ $on-laptop:         800px;
 }
 
 * {
-    font-size: 14px;
-    font-family: $font-family;
+    font-family: $base-font-family;
     margin: 0px;
     padding: 0px;
 }
 
 a {
-    border-bottom: 1px solid #EDEDED;
+    border-bottom: 1px solid $light-grey;
     color: $primary-color;
     font-weight: 400;
     text-decoration: none;
@@ -34,11 +40,22 @@ a {
 
 a:hover, a:focus {
     color: $secondary-color;
-    border-color: #bbb;
+    border-color: $dark-grey;
 }
 
 body {
-    text-align: center;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+.page-content {
+    margin-top: 50px;
 }
 
 .wrapper {
@@ -78,6 +95,7 @@ body {
 
 #about {
     margin-top: 125px;
+    text-align: center;
 }
 
 #about a, #about p {
@@ -88,4 +106,22 @@ body {
     font-size: 22px;
     font-weight: 300;
     margin: 20px 0px;
+}
+
+#posts {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+#posts .post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+#posts .post-link {
+    font-size: 24px;
 }
