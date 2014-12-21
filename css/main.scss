@@ -54,6 +54,10 @@ h1 {
     font-weight: 300;
 }
 
+p, blockquote, ul, ol {
+    margin-bottom: 1.5em;
+}
+
 .page-content {
     margin-top: 50px;
 }
@@ -117,11 +121,14 @@ h1 {
     }
 }
 
-#posts .post-meta {
+.post-meta {
     font-size: $small-font-size;
     color: $grey-color;
 }
-
-#posts .post-link {
+.post-link {
     font-size: 24px;
+}
+
+.post-content {
+    margin: $spacing-unit 0px;
 }
