@@ -93,7 +93,6 @@ p, blockquote, ul, ol {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
 }
 
 #navigation-toggle {
@@ -106,6 +105,28 @@ p, blockquote, ul, ol {
 
 .logo {
     height: 30px;
+}
+
+#navigation-dropdown {
+    border-left: 1px solid $light-grey;
+    bottom: 0;
+    display: block;
+    margin-right: -100px;
+    margin-top: 3px;
+    padding-left: 23px;
+    padding-right: 25px;
+    padding-top: 70px;
+    position: fixed;
+    right: 0;
+    text-align: right;
+    top: 0;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+}
+
+#navigation-toggle:hover > #navigation-dropdown {
+    margin-right: 0px;
 }
 
 #about {
